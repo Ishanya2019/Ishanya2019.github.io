@@ -30,7 +30,7 @@ Author: subhrajit.in
 
 # Body  (text): #888
 # Heading Color #282828
-# Theme Color (link color) #e80033
+# Theme Color (link color) #1e8dfa
 # Mid grey (sub header) #666666
 # -------------------------------------------------------------------*/
 
@@ -49,8 +49,8 @@ body {
     line-height : 1.7em;
     color       : #353e55;
     font-weight : 100;
-    background  : #ffffff;
-    border      : 10px solid #fff;
+    background  : dodgerblue;
+ /*   border      : 10px solid #fff;*/
     }
 
 /* --------------------------------------
@@ -79,7 +79,7 @@ h3 {
     font-size   : 14px;
     line-height : 1.5em;
     font-weight : 300;
-	color  : #e80033;
+	color  : #1e8dfa;
     }
 
 h4 {
@@ -103,7 +103,7 @@ h6 {
  * LINK STYLE
  *------------------------------------------*/
 a {
-    color              : #e80033;
+    color              : #1e8dfa;
     text-decoration    : none;
     -webkit-transition : all 0.3s ease 0s;
     -moz-transition    : all 0.3s ease 0s;
@@ -160,16 +160,16 @@ ul {
 
 /*btn-primary*/
 .btn-primary {
-    background-color : #e80033;
-    border-color     : #e80033;
+    background-color : #1e8dfa;
+    border-color     : #1e8dfa;
     }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active:focus {
     background   : transparent;
-    color        : #e80033;
-    border-color : #e80033;
+    color        : #1e8dfa;
+    border-color : #1e8dfa;
     }
 
 /*btn-default*/
@@ -183,8 +183,8 @@ ul {
 .btn-default:focus,
 .btn-default:active:focus {
     background-color : transparent;
-    color            : #e80033;
-    border-color     : #e80033;
+    color            : #1e8dfa;
+    border-color     : #1e8dfa;
     }
 
 button:focus,
@@ -197,21 +197,33 @@ button:focus,
  * Section Background
  * -------------------*/
 
-.gray-bg {
+/* .gray-bg {
 	background-color : #ECE4E4;
 	border-radius: 25px;   /* border-top       : 1px solid #eeeeee;
-    border-bottom    : 1px solid #eeeeee;*/
-    }
+    border-bottom    : 1px solid #eeeeee;
+    }*/
 
 .white-bg {
-    background-color : #ffffff;
+    background-color : dodgerblue;
     }
+
+
+
+
+
+.verticalcenter {
+    vertical-align: middle;
+}
+
+
+
+
 
 /* --------------------
  *  main Wrapper
  * -------------------*/
 #main-wrapper {
-    background : #ffffff;
+    background : dodgerblue;
     overflow   : hidden;
     }
 
@@ -220,11 +232,11 @@ button:focus,
  *-------------------------------*/
 
 .header {
-    position : absolute;
-    left     : 15px;
-    right    : 15px;
-    top      : 40px;
-    z-index  : 9;
+	position : absolute;
+	left     : 15px;
+	right    : 15px;
+	top      : 40px;
+	z-index  : 9;
     }
 
 /*Logo*/
@@ -240,7 +252,7 @@ button:focus,
         }
 
     .navbar-brand img {
-        max-width : 100%;
+        max-width : 0%;
         height    : auto;
         }
     }
@@ -284,14 +296,14 @@ button:focus,
     }
 
 .main-menu .nav li a {
-    color       : #ffffff;
+    color       : #282828;
     font-weight : 500;
     padding     : 15px 0 15px 30px;
     }
 
 .main-menu .nav li a:hover,
 .main-menu .nav li.active a {
-    color      : #e80033;
+    color      : #1e8dfa;
     background : transparent;
     }
 
@@ -357,22 +369,22 @@ button:focus,
  *-------------------*/
 
 .jumbotron {
-    background            : url("../img/img-jumbotron-bg.jpg");
+  /*  background            : url("../img/img-jumbotron-bg.jpg");
     background-size       : cover;
 	border-radius: 25px;
     padding               : 0;
     margin                : 0;
     height                : 100vh;
-    min-height            : 700px;
+    min-height            : 700px;   
     vertical-align        : middle;
     position              : relative;
     background-attachment : fixed;
-    background-repeat     : no-repeat;
+    background-repeat     : no-repeat;  */
     background-position   : center center;
-    overflow              : hidden;
-    }
+    overflow              : hidden; 
+    } 
 
-.jumbotron .content {
+/* .jumbotron .content {
     color             : #ffffff;
     position          : absolute;
     top               : 50%;
@@ -385,7 +397,7 @@ button:focus,
     transform         : translateY(-50%);
     -webkit-transform : translateY(-50%);
     -moz-transform    : translateY(-50%);
-    }
+    } */
 
 .jumbotron .content h1 {
     color       : #ffffff;
@@ -393,12 +405,12 @@ button:focus,
     font-weight : bold;
     }
 
-.jumbotron .content p.lead {
+/*.jumbotron .content p.lead {
 	text-align: left;
     font-size   : 24px;
     line-height : 1.5em;
     color       : rgba(255, 255, 255, .7);
-    }
+    } */
 
 .jumbotron .content .event-date {
 	text-align: left;
@@ -428,7 +440,10 @@ button:focus,
  * Section Wrapper
  *---------------------------*/
 .section-wrapper {
-    padding : 100px 0;
+	padding-top: 100px;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 40px;
     }
 
 /*---------------------------
@@ -717,7 +732,7 @@ button:focus,
 .form-control:focus,
 .form-control:active {
     box-shadow   : none;
-    border-color : #e80033;
+    border-color : #1e8dfa;
 	border-radius: 12px;
     }
 
@@ -858,7 +873,7 @@ body {
 }
 
 .entry h1 {
-    color:#e80033;
+    color:#1e8dfa;
     font-size:18px;
     margin-bottom:10px;
 }
@@ -876,4 +891,119 @@ body {
     position:relative;
     top:13px;
     left:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ecf9ff;
+}
+
+body {
+  color: #272727;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+}
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/*.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}*/
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 2rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  /*background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);*/
+	background: #f0efea;
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
 }
