@@ -1,0 +1,62 @@
+.typeface-light {
+    font-weight: 200;
+}
+
+.typeface-bold {
+    font-weight: 600;
+}
+
+.typeface-bolder {
+    font-weight: 700;
+}
+
+.speaker-info {
+    text-align: center;
+    font-size: 11px;
+    transition: all .2s ease-in-out;
+}
+
+.speaker-info:hover {
+    transform: scale(1.05);
+}
+
+.speaker-img-active {
+    border-top: 3px solid #FFBC01;
+}
+
+
+.speakerHidden{
+    visibility: hidden;
+}
+
+.speakerVisible {
+    visibility: visible !important;
+}
+
+.s-img {
+    border-top: 3px solid transparent;
+    transition: all .2s ease-in-out;
+}
+
+.s-img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all .2s ease-in-out;
+}
+
+.speaker-name {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.hidden-nav-logo {
+    opacity: 0;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+@media only screen and (max-width: 700px) {
+    
+
+}
+
