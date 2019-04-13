@@ -457,7 +457,7 @@ button:focus,
     width: 40%: 
     }
 
-@media (max-width : 600px) {
+@media (max-width : 900px) {
     .main-logo-banner {
     width: 80%: 
     }
