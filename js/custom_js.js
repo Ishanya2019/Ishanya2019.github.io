@@ -53,8 +53,13 @@ $(document).ready(function(){
         });
 
         var wScroll = $(this).scrollTop();
-        $('.jumbotron').css({
-       'transform': 'translate(0px, -' + (wScroll/7)+'px)'
-    });
+            $('.jumbotron').css({
+            'transform': 'translate(0px, -' + (wScroll/7)+'px)'
+        });
+
+        var aScroll = $(this).scrollTop();
+            $('.jumbotron-abhilasha').css({
+            'transform': 'translate(0px, -' + (wScroll/7)+'px)'
+        });
     });
 });

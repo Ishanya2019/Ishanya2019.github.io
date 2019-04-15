@@ -24,6 +24,7 @@ Author: subhrajit.in
 	    12.2. Contact Form
 	13. Footer / .footer
 	14. Preloader / #preloader
+    15: Dialogue design;
 
 
 # [Color codes]
@@ -224,7 +225,15 @@ button:focus,
     }
 
 .blue-bg {
-	background-color : #00419E;
+    background-color : #00419E;
+    border-radius: 80px 4px 80px 80px;    
+    margin: 0 18px 0 18px;
+    /* border-top       : 1px solid #eeeeee;
+    border-bottom    : 1px solid #eeeeee;*/
+    }
+
+.blue-2-bg {
+	background-color : #3A68B1;
 	border-radius: 80px 4px 80px 80px;    
     margin: 0 18px 0 18px;
 	/* border-top       : 1px solid #eeeeee;
@@ -232,7 +241,15 @@ button:focus,
     }
 
 .yellow-bg {
-	background-color : #FFBC01;
+    background-color : #FFBC01;
+    border-radius: 4px 80px 80px 80px;
+    margin: 0 18px 0 18px;    
+    /* border-top       : 1px solid #eeeeee;
+    border-bottom    : 1px solid #eeeeee;*/
+    }
+
+.red-bg {
+	background-color : #EC4335;
 	border-radius: 4px 80px 80px 80px;
     margin: 0 18px 0 18px;    
 	/* border-top       : 1px solid #eeeeee;
@@ -394,7 +411,7 @@ button:focus,
     }
 
 /*-------------------
- * Jumbotron
+ * Jumbotron + jumbotron-abhilasha
  *-------------------*/
 
 .jumbotron {
@@ -416,7 +433,7 @@ button:focus,
 .jumbotron .content {
     color             : #ffffff;
     position          : absolute;
-    bottom: 8%;
+    bottom: 6%;
     left              : 0;
     right             : 0;
     height            : 30%;
@@ -453,11 +470,67 @@ button:focus,
     margin-top : 40px;
     }
 
+.jumbotron-abhilasha {
+    background            : url("../img/abhilasha-bg.png");
+    background-size       : 120% | cover;
+    border-radius: 0px;
+    padding               : 0;
+    margin                : 0 18px 0 18px;
+    height                : 100vh;
+    min-height            : 700px;
+    vertical-align        : middle;
+    position              : relative;
+    background-attachment : fixed;
+    background-repeat     : no-repeat;
+    background-position   : center center;
+    overflow              : hidden;
+    }
+
+.jumbotron-abhilasha .content {
+    color             : #ffffff;
+    position          : absolute;
+    bottom: 0%;
+    left              : 0;
+    right             : 0;
+    height            : 30%;
+    width             : 100%;
+    margin            : 0 auto;
+    padding           : 0 51px 0 90px;
+    transform         : translateY(-50%);
+    -webkit-transform : translateY(-50%);
+    -moz-transform    : translateY(-50%);
+    }
+
+.jumbotron-abhilasha .content h1 {
+    color       : #ffffff;
+    text-align: left;
+    font-weight : bold;
+    }
+
+.jumbotron-abhilasha .content p.lead {
+    text-align: left;
+    font-size   : 24px;
+    line-height : 1.5em;
+    color       : rgba(255, 255, 255, .7);
+    }
+
+.jumbotron-abhilasha .content .event-date {
+    text-align: left;
+    line-height: normal;
+    color: #ffffff;
+    font-size     : 24px;
+    margin-bottom : 40px;
+    }
+
+.jumbotron-abhilasha .btn {
+    margin-top : 40px;
+    }
+
 .main-logo-banner {
     width: 40%: 
     }
 
-@media (max-width : 900px) {
+@media (max-width : 600px) {
     .main-logo-banner {
     width: 80%: 
     }
@@ -636,7 +709,6 @@ button:focus,
 	font-size        : 21px;
 	border-radius: 3px 3px 0px 0px;
 	font-weight      : bold;
-	/*text-transform   : uppercase;*/
 	color            : #ffffff;
 	padding          : 14px 40px;
 	margin           : 0;
@@ -869,3 +941,56 @@ button:focus,
 
 .td{text-align: left;}
 
+/* dialog design */
+
+.left-dialog {
+    width: auto;
+    height: auto;
+    font-size: 24px;
+    padding: 36px;
+    border-radius: 8px 36px 36px 36px;
+    background: #f7ad1d; 
+}
+
+.round-img {
+    width: 1000px;
+    border-radius: 50%;
+}
+
+.message-box {
+    padding: 24px;
+    background: #b11f13;
+    border-radius: 24px;
+}
+
+.box-set_speaker {
+  width: 108px;
+  padding: 0 20px 0 0;
+  float: left;
+}
+
+.box-set_speaker_image {
+  width: 100%;
+}
+
+.box-set_header {
+  float: left;
+  color: #fff;
+  padding: 12px 0 0;
+}
+
+.btn-text-abhilasha:hover {
+    color: #ffffff;
+}
+
+#myCarousel { 
+    width: 70%
+}
+
+@media (max-width : 700px) {
+    #myCarousel { 
+        width: 100%
+    }
+}
+
+}

@@ -6,9 +6,9 @@ jQuery(function ($) {
     // PreLoader
     // --------------------------------------------------------------------
 
-    (function () {
-        $('#preloader').delay(400).fadeOut('slow');
-    }());
+    $(window).load(function() {
+        $('#preloader').delay(500).fadeOut('slow');
+    });
 
     // --------------------------------------------------------------------
     // One Page Navigation
