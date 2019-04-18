@@ -433,7 +433,7 @@ button:focus,
 .jumbotron .content {
     color             : #ffffff;
     position          : absolute;
-    bottom: 6%;
+    bottom            : 15%;
     left              : 0;
     right             : 0;
     height            : 30%;
@@ -473,7 +473,7 @@ button:focus,
 .jumbotron-abhilasha {
     background            : url("../img/abhilasha-bg.png");
     background-size       : 120% | cover;
-    border-radius: 0px;
+    border-radius         : 0px;
     padding               : 0;
     margin                : 0 18px 0 18px;
     height                : 100vh;
@@ -489,7 +489,7 @@ button:focus,
 .jumbotron-abhilasha .content {
     color             : #ffffff;
     position          : absolute;
-    bottom: 0%;
+    bottom            : 8%;
     left              : 0;
     right             : 0;
     height            : 30%;
@@ -546,7 +546,23 @@ button:focus,
     .jumbotron .content p.lead {
         font-size : 15px;
         }
+    
+    .jumbotron-abhilasha {
+        border-radius         : 0px;
+        padding               : 0;
+        margin                : 0 18px 0 18px;
+        height                : 100vh;
+        min-height            : 700px;
+        vertical-align        : middle;
+        position              : relative;
+        background-attachment : fixed;
+        background-repeat     : no-repeat;
+        background-position   : left center;
+        overflow              : hidden;
+        background-origin     : -60px; 
     }
+}
+
 
 /*---------------------------
  * Section Wrapper
@@ -991,10 +1007,15 @@ button:focus,
     #myCarousel { 
         width: 100%
     }
-}
 
-}
+    .quote {
+        font-size: 12px;
+    }
 
+    .left-dialog {
+        padding: 8px 18px 8px 18px;
+    }
+}
 
 
 
